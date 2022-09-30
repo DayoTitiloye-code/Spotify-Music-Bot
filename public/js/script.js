@@ -32,11 +32,10 @@ recognition.addEventListener('result', (e) => {
   //https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognitionEvent/results
 
   let last = e.results.length - 1
-
+  let text = e.results[last][0].transcript
   outputYou.textContent = text
   console.log('Speech recognition confidence: ' + e.results[0][0].confidence)
 
-  let text = e.results[last][0].transcript
   // Call emotion detection API
   const getEmotion = fetch(
     'https://emotion-detection-api-c7aaatrzsq-ew.a.run.app/predict?text=' + text
