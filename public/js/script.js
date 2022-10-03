@@ -61,6 +61,22 @@ recognition.addEventListener('result', (e) => {
           document.querySelector('.playlist').src =
             'https://open.spotify.com/embed/playlist/64v2LytooaaE1b5ogu0uMo?utm_source=generator&theme=0'
           break
+        case 'anger':
+          document.querySelector('.playlist').src =
+            'https://open.spotify.com/embed/playlist/37i9dQZF1DX08jcQJXDnEQ?utm_source=generator'
+          break
+        case 'fear':
+          document.querySelector('.playlist').src =
+            'https://open.spotify.com/embed/playlist/31xXPz9MHntnxHvTQ7SYdu?utm_source=generator'
+          break
+        case 'surprise':
+          document.querySelector('.playlist').src =
+            'https://open.spotify.com/embed/playlist/3CkJH2FzvJciO8UmkzHCMU?utm_source=generator'
+          break
+        case 'sadness':
+          document.querySelector('.playlist').src =
+            'https://open.spotify.com/embed/playlist/37i9dQZF1DX7qK8ma5wgG1?utm_source=generator'
+          break
       }
 
       document.querySelector('.playlist').style.visibility = 'visible'
